@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+   <!-- Vue development version, includes helpful console warnings -->
+   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+   <script src="//unpkg.com/vue"></script>
+
+   <!--vue example: https://vuejsexamples.net/vuejs-ajax/-->
+   <!--    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>-->
+
+   <!--
+    Latest compiled JavaScript
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+-->
+
+   <!--    <link href="reset.css" rel="stylesheet" type="text/css" media="all">-->
+
+   <!-- CSS -->
+   <link href="style.css" rel="stylesheet" type="text/css" media="all">
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css">
+
+</head>
+
+<body>
+   <div id="body" class="container">
+       <header>
+           <div class="container">
+               <div class="header">
+               </div>
+           </div>
+       </header>
+
+       <nav class="navbar navbar-default container">
+           <div>
+               <div class="navbar-header">
+                   <div class="logo">
+                       <img src="bookstorelogo1.jpg" alt="logo" />
+                   </div>
+               </div>
+               <div class="collapse navbar-collapse container" id="myNavbar">
+                   <ul class="nav navbar-nav">
+                   </ul>
+                   <input id="myInput" type="text" placeholder="Search..">
+               </div>
+           </div>
+       </nav>
+
+       <div class="maincontainer">
+           <div class="card" v-for="book in books">
+               <div class="front">
+                   <img v-bind:src="book.portada" v-bind:alt="book.titulo" />
+               </div>
+               <div class="back">
+                   <h1 class="search">{{book.titulo}} </h1>
+                   <p class="search">{{book.descripcion}}</p>
+<!--                    <button type="button" value="Show Button" class="btn btn-info" onclick="showImage();" /><p>"Más info"</p>-->
+<!--                    <img id="loadingImage" v-bind:src="book.detalle" style="visibility:hidden" />-->
+                   <button v-bind:href="book.detalle" data-fancybox type="button" id="button" class="btn btn-info">"Más info"</button>
+                   <!--                    <a v-bind:href="book.detalle" data-fancybox data-caption="Caption for single image"><img v-bind:src="book.detalle" alt="" /></a>-->
+               </div>
+           </div>
+       </div>
+   </div>
+   <!-- JS -->
+   <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+   <script src="app.js"></script>
+</body>
+</html>

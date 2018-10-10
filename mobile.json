@@ -1,56 +1,55 @@
-
 {
 	"schedule": {
 		"september": [
 
 			{
-				"host": "U1",
-				"visitor": "U4",
+				"host": "Team U1",
+				"visitor": "Team U4",
 				"loc": "AJ katzenmaier",
 				"date": "9/1",
 				"time": "9:30 a.m."
 	},
 			{
-				"host": "U3",
-				"visitor": "U2",
+				"host": "Team U3",
+				"visitor": "Team U2",
 				"loc": "Greenbay",
 				"date": "9/1",
 				"time": "1:00 p.m."
 	},
 			{
-				"host": "U5",
-				"visitor": "U6",
+				"host": "Team U5",
+				"visitor": "Team U6",
 				"loc": "Howard A Yeager",
 				"date": "9/8",
 				"time": "9:30 a.m."
 	},
 
 			{
-				"host": "U6",
-				"visitor": "U1",
+				"host": "Team U6",
+				"visitor": "Team U1",
 				"loc": "Marjorie P Hart",
 				"date": "9/8",
 				"time": "1:00 p.m."
 	},
 
 			{
-				"host": "U2",
-				"visitor": "U4",
+				"host": "Team U2",
+				"visitor": "Team U4",
 				"loc": "North",
 				"date": "9/15",
 				"time": "9:30 p.m."
 	},
 			{
-				"host": "U3",
-				"visitor": "U5",
+				"host": "Team U3",
+				"visitor": "Team U5",
 				"loc": "AJ Katzenmaier",
 				"date": "9/15",
 				"time": "9:30 p.m."
 	},
 
 			{
-				"host": "U1",
-				"visitor": "U3",
+				"host": "Team U1",
+				"visitor": "Team U3",
 				"loc": "South",
 				"date": "9/22",
 				"time": "9:30 a.m."
@@ -58,15 +57,15 @@
 
 
 			{
-				"host": "U2",
-				"visitor": "U6",
+				"host": "Team U2",
+				"visitor": "Team U6",
 				"loc": "Howard A Yeager",
 				"date": "9/22",
 				"time": "1:00 p.m."
 	},
 			{
-				"host": "U4",
-				"visitor": "U5",
+				"host": "Team U4",
+				"visitor": "Team U5",
 				"loc": "Greenbay",
 				"date": "9/29",
 				"time": "9:30 a.m."
@@ -75,16 +74,16 @@
 
 		"october": [
 			{
-				"host": "U2",
-				"visitor": "U5",
+				"host": "Team U2",
+				"visitor": "Team U5",
 				"loc": "Marjorie P Hart",
 				"date": "10/06",
 				"time": "9:30 a.m."
 	},
 
 			{
-				"host": "U1",
-				"visitor": "U6",
+				"host": "Team U1",
+				"visitor": "Team U6",
 				"loc": "South",
 				"date": "10/06",
 				"time": "1:00 p.m."
@@ -92,8 +91,8 @@
 
 
 			{
-				"host": "U3",
-				"visitor": "U4",
+				"host": "Team U3",
+				"visitor": "Team U4",
 				"loc": "Howard A Yeager",
 				"date": "10/08",
 				"time": "9:30 a.m."
@@ -101,39 +100,39 @@
 
 
 			{
-				"host": "U5",
-				"visitor": "U1",
+				"host": "Team U5",
+				"visitor": "Team U1",
 				"loc": "Greenbay",
 				"date": "10/08",
 				"time": "1:00 p.m."
 	},
 
 			{
-				"host": "U6",
-				"visitor": "U3",
+				"host": "Team U6",
+				"visitor": "Team U3",
 				"loc": "North",
 				"date": "10/08",
 				"time": "9:30 a.m."
 	},
 
 			{
-				"host": "U2",
-				"visitor": "U4",
+				"host": "Team U2",
+				"visitor": "Team U4",
 				"loc": "Marjorie P Hart",
 				"date": "10/20",
 				"time": "1:00 p.m."
 	},
 
 			{
-				"host": "U3",
-				"visitor": "U1",
+				"host": "Team U3",
+				"visitor": "Team U1",
 				"loc": "AJ Katzenmaier",
 				"date": "10/20",
 				"time": "1:00 p.m."
 	},
 			{
-				"host": "U5",
-				"visitor": "U6",
+				"host": "Team U5",
+				"visitor": "Team U6",
 				"loc": "Howard A Yeager",
 				"date": "10/27",
 				"time": "1:00 p.m."
@@ -141,88 +140,94 @@
 
 	],
 
-	"teams" : [
-		{
-			"id": "T1",
-			"name": "Knicks",
-			"shield": "2-New-York-Knicks-tickets-Vs-Golden-State.jpg"
+		"teams": [
+			{
+				"id": "T1",
+				"team": "Team U1",
+				"name": "Knicks",
+				"shield": "2-New-York-Knicks-tickets-Vs-Golden-State.jpg"
 
 		},
 
-		{
-			"id": "T2",
-			"name": "Blue Jays",
-			"shield": "1200px-Toronto_Blue_Jays_logo.svg.png"
+			{
+				"id": "T2",
+				"team": "Team U2",
+				"name": "Blue Jays",
+				"shield": "1200px-Toronto_Blue_Jays_logo.svg.png"
 
 
 		},
 
-		{
-			"id": "T3",
-			"name": "Washington",
-			"shield": "1200px-Washington_Wizards_logo.svg.png"
+			{
+				"id": "T3",
+				"team": "Team U3",
+				"name": "Washington",
+				"shield": "1200px-Washington_Wizards_logo.svg.png"
 
 		},
 
-		{
-			"id": "T4",
-			"name": "Golden State",
-			"shield": "golden-state-warriors-logo-pin-4_174947.jpg"
+			{
+				"id": "T4",
+				"team": "Team U4",
+				"name": "Golden State",
+				"shield": "golden-state-warriors-logo-pin-4_174947.jpg"
 
 		},
 
-		{
-			"id": "T5",
-			"name": "cheerleaders",
-			"shield": "images.png"
+			{
+				"id": "T5",
+				"team": "Team U5",
+				"name": "cheerleaders",
+				"shield": "images.png"
 
 		},
 
-		{
-			"id": "T6",
-			"name": "repoters",
-			"shield": "raptors.jpg"
+			{
+				"id": "T6",
+				"team": "Team U6",
+				"name": "repoters",
+				"shield": "raptors.jpg"
 
 		}
 
 	],
-	
+
 		"locations": [
-		{
-			"id": "L1",
-			"name": "Howard A Yeager",
-			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.720311570161!2d-87.84787868454474!3d42.32716387918911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fecd0628e1bb5%3A0x9a4d5f9aafd42e02!2sMarjorie+P+Hart+Elementary+School!5e0!3m2!1sen!2snl!4v1537261680881"
-			
+			{
+				"id": "L1",
+				"name": "Howard A Yeager",
+				"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.720311570161!2d-87.84787868454474!3d42.32716387918911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fecd0628e1bb5%3A0x9a4d5f9aafd42e02!2sMarjorie+P+Hart+Elementary+School!5e0!3m2!1sen!2snl!4v1537261680881"
+
 		},
 
-		{
-			"id": "L2",
-			"name": "AJ Katzenmaier",
-			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.78105206158!2d-87.86492878520772!3d42.32586847918925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sA+J+Katzenmaier+Elementary+School!5e0!3m2!1sen!2snl!4v1537262297433"
+			{
+				"id": "L2",
+				"name": "AJ Katzenmaier",
+				"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2949.78105206158!2d-87.86492878520772!3d42.32586847918925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880f932fbc6ba7cd%3A0xcf2bbe275c6da815!2sA+J+Katzenmaier+Elementary+School!5e0!3m2!1sen!2snl!4v1537262297433"
 		},
 
-		{
-			"id": "L3",
-			"name": "Greenbay",
-			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364113.4438475112!2d-88.27068729682513!3d44.522602940498444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e2e809b380f3%3A0x6370045214dcf571!2sGreen+Bay%2C+WI%2C+USA!5e0!3m2!1sen!2snl!4v1537262373006"
+			{
+				"id": "L3",
+				"name": "Greenbay",
+				"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d364113.4438475112!2d-88.27068729682513!3d44.522602940498444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8802e2e809b380f3%3A0x6370045214dcf571!2sGreen+Bay%2C+WI%2C+USA!5e0!3m2!1sen!2snl!4v1537262373006"
 		},
 
-		{
-			"id": "L4",
-			"name": "Marjorie P HArt",
-			"iframe": "https://www.google.com/maps/embed?pb"
+			{
+				"id": "L4",
+				"name": "Marjorie P HArt",
+				"iframe": "https://www.google.com/maps/embed?pb"
 		},
-		{
-			"id": "L5",
-			"name": "north",
-			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11798.750381021227!2d-87.86189293022457!3d42.32786159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fecd3085aa3bd%3A0x54f2728b0f77d756!2sNorth+Chicago+Community+High+School!5e0!3m2!1sen!2snl!4v1537262630541"
+			{
+				"id": "L5",
+				"name": "north",
+				"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11798.750381021227!2d-87.86189293022457!3d42.32786159999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fecd3085aa3bd%3A0x54f2728b0f77d756!2sNorth+Chicago+Community+High+School!5e0!3m2!1sen!2snl!4v1537262630541"
 		},
 
-		{
-			"id": "L6",
-			"name": "south",
-			"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23597.762999997452!2d-87.86319963017988!3d42.327162526457506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac2135a21%3A0x8ce88e90b96bbec1!2sSouth+Elementary+School!5e0!3m2!1sen!2snl!4v1537262711087"
+			{
+				"id": "L6",
+				"name": "south",
+				"iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23597.762999997452!2d-87.86319963017988!3d42.327162526457506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880feccac2135a21%3A0x8ce88e90b96bbec1!2sSouth+Elementary+School!5e0!3m2!1sen!2snl!4v1537262711087"
 		}
 	]
-}
+	}
 }

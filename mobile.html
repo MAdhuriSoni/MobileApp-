@@ -2,104 +2,159 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title> Mobile app </title>
-	<link href="mobile.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCF1SLPQaHHF7elZN5A7zJ5B14zZCZ02Sg",
+    authDomain: "mobileapp-fc4fc.firebaseapp.com",
+    databaseURL: "https://mobileapp-fc4fc.firebaseio.com",
+    projectId: "mobileapp-fc4fc",
+    storageBucket: "mobileapp-fc4fc.appspot.com",
+    messagingSenderId: "564262945550"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<link rel="apple-touch-icon" href="apple-touch-icon-iphone.png">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png">
+    
+    <title> Mobile app </title>
+    <link href="mobile.css" rel="stylesheet" type="text/css" />
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
 
+    <div id="main">
+        <!--        <div v-if="loading" id="sth"></div>-->
+        <nav class="navbar">
+
+            <!--        <nav class="navbar navbar-default navbar-static-top">-->
+            <div class="container">
+                <div class="navbar-header">
+
+                    <i class="fa fa-fw fa-home" style="font-size:40px" class="navbar-brand" @click="main=true ,currentChat = false, currentMap = false, currentSchedule = false, currentTeam = false " id="btn1"></i>
 
 
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<div class="navbar-header">
-			</div>
-			<ul class="nav navbar-nav">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Map</a></li>
-				<li><a href="#">schedule</a></li>
-			</ul>
-		</div>
-	</nav>
+                    <i class="fa fa-group" style="font-size:40px" class="navbar-brand" @click="currentSchedule = true, currentMap = false, currentTeam = false, currentChat = false, main =false" id="btn3"></i>
 
-	<div id="main">
+                    <i class="fa fa-map-marker" style="font-size:40px" class="navbar-brand" style="font-size:24px" @click="currentMap = true, currentSchedule= false , currentChat = false,  currentTeam = false, main=false" id="btn2"></i>
 
-		<div class="btn-group">
+                    <!--
+                    <a class="fb-ic">
 
-			<button type="button" id="first" class="btn btn-primary" @click="currentChat = true , currentMap=false, currentSchedule = false, currentTeam = false">Chat</button>
+                    </a>
+-->
 
-			<button type="button" id="second" class="btn btn-primary" @click="currentMap = true, currentSchedule= false , currentChat = false,  currentTeam = false">Map</button>
-
-			<button type="button" id="third" class="btn btn-primary" @click="currentSchedule = true, currentMap = false, currentTeam = false, currentChat = false">Schedule</button>
-
-			<button type="button" id="fourth" class="btn btn-primary" @click="currentTeam = true , currentSchedule = false ,currentMap = false,  currentChat = false">Team</button>
-		</div>
-
-
-		<div class="chat"></div>
-		
-		
-		<div class="team" v-if = "currentTeam" v-for = "t in team">
-		<h3>{{t.name}}</h3>
-			<img v-bind:src= "t.shield">
-			
-			
-		</div>
-
-
-		<div class="map" v-if="currentMap" v-for="location in locations">
-			<iframe v-bind:src="location.iframe"> </iframe>
-
-		</div>
-
-		<div class="schedul">
-			<div class="schedule" v-if="currentSchedule" v-for="match in schedule.september">
-
-				<h3>{{match.host}} and {{match.visitor}}</h3>
-				<p>{{match.loc}} </p>
-				<p>{{match.date}}</p>
-				<p>{{match.time}}</p>
-				
-				
-
-			</div>
-			<div class="schedule" v-if="currentSchedule" v-for="match in schedule.october">
-				<h3>{{match.host}} and {{match.visitor}}</h3>
-			    <p>{{match.loc}}</p>
-			    <p>{{match.date}}</p>
-				<p>{{match.time}}</p>
-			</div>
-
-
-		</div>
-
-
-	</div>
-
-	<footer>
-		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-footer">
-					<a class="navbar-brand" href="#">Team</a>
-					<a class="navbar-brand" href="#">Chat</a>
-					<a class="fb-ic">
-						<i class="fa fa-facebook fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-					</a>
-
-				</div>
-			</div> <!-- close container div -->
-		</nav> <!-- close navbar nav -->
-	</footer>
+                </div>
+            </div> <!-- close container div -->
+        </nav> <!-- close navbar nav -->
 
 
 
-	<script src="https://unpkg.com/vue/dist/vue.js"></script>
-	<script src="mobile.js"></script>
+        <div v-if="main" class="btn-group">
+
+            <button type="button" id="first" class="btn btn-primary" @click="currentChat = true , currentMap=false, currentSchedule = false, currentTeam = false, main=false">Chat</button>
+
+            <button type="button" id="second" class="btn btn-primary" @click="currentMap = true, currentSchedule= false , currentChat = false,  currentTeam = false, main=false">Map</button>
+
+            <button type="button" id="third" class="btn btn-primary" @click="currentSchedule = true, currentMap = false, currentTeam = false, currentChat = false, main =false">Schedule</button>
+
+            <button type="button" id="fourth" class="btn btn-primary" @click="currentTeam = true , currentSchedule = false ,currentMap = false,  currentChat = false, main=false, shwbtn = true, showTeamInfo = false">Team</button>
+        </div>
+
+
+        <div class="chat"></div>
+
+        <div v-if="currentTeam">
+            <div class="team" v-for="(t, index) in team">
+                <div> <button v-if="shwbtn" @click="showteam(index)" id="T1">{{t.team}}</button></div>
+
+                <div v-if="showTeamInfo && teamNumber === index">
+                    <h3 class="Tname">{{t.name}}</h3>
+                    <img v-bind:src="t.shield" class="I1">
+
+                    <div>
+                        <div v-if="(matchInfo.host === t.team || matchInfo.visitor === t.team)&& teamNumber === index" v-for="matchInfo in schedule.september" class="detail">
+                            <p>{{matchInfo.time}}: {{matchInfo.host}} and {{matchInfo.visitor}}</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div v-if="currentMap">
+            <div class="map" v-for="location in locations">
+                <iframe v-bind:src="location.iframe"> </iframe>
+            </div>
+        </div>
+
+        <div class="schedul" v-if="currentSchedule">
+            <div class="schedule" v-for="match in schedule.september">
+
+                <img v-bind:src="match.shield">
+                <h4>{{match.host}} and {{match.visitor}}</h4>
+                <p>{{match.loc}} </p>
+                <p>{{match.date}}</p>
+                <p>{{match.time}}</p>
+
+
+
+            </div>
+            <div class="schedule" v-for="match in schedule.october">
+                                <img v-bind:src="match.shield">
+                <h4>{{match.host}} and {{match.visitor}}</h4>
+                <p>{{match.loc}}</p>
+                <p>{{match.date}}</p>
+                <p>{{match.time}}</p>
+            </div>
+
+
+        </div>
+
+
+        <footer class="footer">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-footer">
+                        <i class="fa fa-user-circle-o" style="font-size:40px" class="navbar-brand" @click="currentTeam = true , currentSchedule = false ,currentMap = false,  currentChat = false, main=false" id="btn4"></i>
+                        <i class="fa fa-fw fa-envelope" style="font-size:40px" class="navbar-brand" @click="currentChat = true , currentMap=false, currentSchedule = false, currentTeam = false, main=false" id="btn5"></i>
+                        <a class="fb-ic">
+
+                        </a>
+
+                    </div>
+                </div> <!-- close container div -->
+            </nav> <!-- close navbar nav -->
+        </footer>
+
+
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="mobile.js"></script>
 
 </body>
 

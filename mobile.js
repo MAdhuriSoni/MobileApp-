@@ -16,7 +16,7 @@ var main = new Vue({
 		teamNumber: -1,
         shwbtn:true,
 //        loading:true,
-	},
+	}  ,
 	created: function () {
 		this.start();
 	},
